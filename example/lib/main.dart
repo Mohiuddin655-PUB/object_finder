@@ -1,19 +1,3 @@
-ObjectFinder is a powerful Dart extension on Object? that simplifies safe type checking, dynamic
-value conversion, and nested object access with default values. It supports primitives, lists, maps,
-and custom conversion via builders.
-
-## Features
-
-- ✅ Check object validity (isValid, isNotValid)
-- ✅ Detect types (isMap, isList, isListOfMap)
-- ✅ Safe equality comparison (equals)
-- ✅ Convert dynamic values to int, double, String, bool, num or List<T>
-- ✅ Retrieve nested map data safely (find, findOrNull, finds, findsOrNull, get, getOrNull)
-- ✅ Supports optional custom conversion via ObjectBuilder
-
-## Usage
-
-```dart
 import 'package:object_finder/object_finder.dart';
 
 void main() {
@@ -53,11 +37,3 @@ void main() {
   print('First price: $firstPrice');
   print('Nickname: $nickname');
 }
-```
-
-## ✨ Highlights:
-
-- Converts dynamic strings into strongly typed values.
-- Handles nested maps and lists effortlessly.
-- Provides safe defaults and type builders.
-- Works great for parsing JSON or remote API data.
