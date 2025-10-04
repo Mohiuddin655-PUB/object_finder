@@ -173,8 +173,8 @@ extension ObjectFinder on Object? {
     final value = key == null
         ? root
         : root is Map
-        ? root[key]
-        : null;
+            ? root[key]
+            : null;
 
     return _v(value, builder) ?? defaultValue;
   }
@@ -213,8 +213,8 @@ extension ObjectFinder on Object? {
     final data = key == null
         ? root
         : root is Map
-        ? root[key]
-        : null;
+            ? root[key]
+            : null;
     final iterable = _vs(data, builder);
     if (iterable == null) return defaultValue;
     return List.from(iterable);
